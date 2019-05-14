@@ -1,0 +1,56 @@
+<div id="modal-dialog">
+  <button id='modal-button' type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#modal">choose your spell</button>
+  
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="title">Choose your spell!</h5>
+        </div>
+        <div class="modal-body row">
+          <div class='col-4'>
+            <h3 class="text-center">Wind</h3>
+            <button type="button" tabindex ='1' class="btn btn-primary btn-block" data-spell ='wind' data-name="listening" data-toggle="modal" data-target="#task" data-dismiss='modal' autofocus>listening</button>
+            <button type="button" tabindex ='2' class="btn btn-primary btn-block" data-spell ='wind' data-name="translation" data-toggle="modal" data-target="#task" data-dismiss='modal'>translation</button>
+            <button type="button" tabindex ='3' class="btn btn-primary btn-block" data-spell ='wind' data-name="arithmetic" data-toggle="modal" data-target="#task" data-dismiss='modal'>arithmetic</button>
+          </div>  
+          <div class='col-4'>
+            <h3 class="text-center">Snow</h3>
+            <button type="button" tabindex ='4' class="btn btn-secondary btn-block" data-spell ='snow' data-name="animals" data-toggle="modal" data-target="#task" data-dismiss='modal'>animals</button>
+            <button type="button" tabindex ='5' class="btn btn-secondary btn-block" data-spell ='snow' data-name="rounding" data-toggle="modal" data-target="#task" data-dismiss='modal'>rounding</button>
+            <button type="button" tabindex ='6' class="btn btn-secondary btn-block" data-spell ='snow' data-name="geography" data-toggle="modal" data-target="#task" data-dismiss='modal'>geography</button>
+          </div>
+          <div class='col-4'>
+            <h3 class="text-center">Treat</h3>
+            <button type="button" tabindex ='7' class="btn btn-success btn-block" data-spell ='treat' data-name="3D shapes" data-toggle="modal" data-target="#task" data-dismiss='modal'>3D shapes</button>
+            <button type="button" tabindex ='8' class="btn btn-success btn-block" data-spell ='treat' data-name="ordering" data-toggle="modal" data-target="#task" data-dismiss='modal'>ordering</button>
+            <button type="button" tabindex ='9'class="btn btn-success btn-block" data-spell ='treat' data-name="binary system" data-toggle="modal" data-target="#task" data-dismiss='modal'>binary system</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="task" tabindex="-1" role="dialog" data-backdrop='static' data-keyboard='false'>
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="task-name"></h5>
+        </div>
+        <div class="modal-body">
+          <p id="task-description"></p>
+          <div id="task-body" class="col-6 mx-auto bg-warning"></div>
+          <form id='task-form'>
+            <div class="form-group">
+              <label for="answer" class="col-form-label">Input here:</label>
+              <textarea tabindex ='0' class="form-control" rows="1" id="answer" autofocus></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="getAnswer" class="btn btn-primary" data-dismiss='modal'>Answer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
