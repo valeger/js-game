@@ -1,0 +1,5 @@
+export * from '../audio/wind.mp3'
+export * from '../audio/snow.mp3'
+export * from '../audio/hurt.mp3'
+export * from '../audio/dead.mp3'
+export * from '../audio/treat.mp3'
