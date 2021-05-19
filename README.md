@@ -39,12 +39,12 @@ All information related to this game can be found on the main page of the app (i
 
 These are some screenshots of an active window:
 
-![The main battle window](https://imgur.com/0C8WoRl)
-![Modal dialog](https://imgur.com/L3T2Gja)
-![Task "Listening"](https://imgur.com/lF2DbVQ)
-![Task "Ordering"](https://imgur.com/xyyDrfn)
-![Task "Translation"](https://imgur.com/ZVnte1W)
-![Task "Biology"](https://imgur.com/zzVGgZr)
+![The main battle window](https://imgur.com/0C8WoRl.png)
+![Modal dialog](https://imgur.com/L3T2Gja.png)
+![Task "Listening"](https://imgur.com/lF2DbVQ.png)
+![Task "Ordering"](https://imgur.com/xyyDrfn.png)
+![Task "Translation"](https://imgur.com/ZVnte1W.png)
+![Task "Biology"](https://imgur.com/zzVGgZr.png)
 
 ## Run locally
 
