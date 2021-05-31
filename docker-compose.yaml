@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    restart: always
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: $MONGODB_USER
+        MONGO_INITDB_ROOT_PASSWORD: $MONGODB_PASS
+    ports:
+        - "27017:27017"
+
+  node:
+    build:
+      context: node
+      dockerfile: Dockerfile.yaml
+    container_name: "node"
+    restart: always
+    links:
+        - "mongodb"
+    environment:
+      PORT: 4000
+      MONGODB_USER: $MONGODB_USER
+      MONGODB_PASS: $MONGODB_PASS
+    ports:
+        - "4000:4000"
+
