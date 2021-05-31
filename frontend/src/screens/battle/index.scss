@@ -1,0 +1,59 @@
+body {
+  z-index: -1;
+
+  width: 100vw;
+  height: 100vh;
+  
+  background: #000 url('../home/images/play.png') no-repeat center;
+  background-size: cover;
+  background-position: center center;
+
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+
+  top: 150px;
+  left: calc(50% - 630px);
+}
+
+#user {
+  z-index: 2;
+
+  padding: 0;
+  left: 100px;
+  background-color: transparent;
+
+}
+
+#monster {
+  z-index: 2;
+
+  right: 150px;
+  padding:0;
+  margin: 0 auto;
+
+  background-color: transparent;
+  
+  transform: scale3d(1.0, 1.0, 1.0);
+  animation: breath 0.6s linear infinite alternate;
+}
+
+.btn-warning {
+  position: relative;
+  top: 30px;
+}
+
+#server {
+  color: rgb(58, 57, 57);
+}
+
+@keyframes breath {
+  0% {
+    transform: scale3d(1.2, 1.2, 1.2)
+  }
+  100% {
+    transform: scale3d(1.215, 1.205, 1.3)
+  }
+}

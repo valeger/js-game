@@ -1,0 +1,6 @@
+export * from '../images/cone.png'
+export * from '../images/cube.png'
+export * from '../images/cylinder.png'
+export * from '../images/prism.png'
+export * from '../images/pyramid.png'
+export * from '../images/sphere.png'
